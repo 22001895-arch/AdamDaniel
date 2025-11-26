@@ -3,220 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Love</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Arial', sans-serif;
-            overflow: hidden;
-        }
-
-        .love-container {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .love-text {
-            font-size: 5rem;
-            font-weight: bold;
-            color: #ff4d6d;
-            text-shadow: 3px 3px 0px #ff8fa3,
-                         6px 6px 0px rgba(255, 77, 109, 0.3);
-            animation: heartbeat 1.5s ease-in-out infinite;
-            margin-bottom: 2rem;
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            color: #ff4d6d;
-            opacity: 0.9;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .hearts {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .heart {
-            position: absolute;
-            font-size: 2rem;
-            color: #ff4d6d;
-            opacity: 0.7;
-            animation: fall linear forwards;
-        }
-
-        @keyframes heartbeat {
-            0% {
-                transform: scale(1);
-            }
-            25% {
-                transform: scale(1.1);
-            }
-            50% {
-                transform: scale(1);
-            }
-            75% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        @keyframes fall {
-            to {
-                transform: translateY(100vh) rotate(360deg);
-                opacity: 0;
-            }
-        }
-
-        /* Sparkle effect */
-        .sparkle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: #fff;
-            border-radius: 50%;
-            animation: sparkle 2s linear infinite;
-        }
-
-        @keyframes sparkle {
-            0%, 100% {
-                opacity: 0;
-                transform: scale(0);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .love-text {
-                font-size: 3rem;
-            }
-            .subtitle {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .love-text {
-                font-size: 2.5rem;
-            }
-            .subtitle {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>Ahmad bin Abdullah - Electrical Engineering Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="hearts" id="hearts"></div>
-    <div class="love-container">
-        <div class="love-text">I Love You Baby</div>
-        <div class="subtitle">Forever and Always 💖</div>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h1 class="name">Ahmad bin Abdullah</h1>
+                    <h2 class="title">Electrical Engineering Student</h2>
+                    <p class="university"><i class="fas fa-university"></i> Universiti Malaya</p>
+                    <p class="tagline">Seeking internship opportunity to apply electrical engineering principles and gain practical industry experience</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ahmad.abdullah@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+60 12-345 6789</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kuala Lumpur, Malaysia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/ahmadabdullah</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-id-card"></i>
+                    <span>Available: December 2024 - March 2025</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Education Section -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>Bachelor of Electrical Engineering</h4>
+                            <span class="date">2021 - Present</span>
+                        </div>
+                        <div class="institution">Universiti Malaya</div>
+                        <div class="gpa">Current CGPA: 3.75/4.00</div>
+                        <div class="expected-grad">Expected Graduation: June 2025</div>
+                    </div>
+                </section>
+
+                <!-- Relevant Coursework -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-book"></i>
+                        Relevant Coursework
+                    </h3>
+                    <div class="coursework-grid">
+                        <div class="course-category">
+                            <h5>Power Systems</h5>
+                            <ul>
+                                <li>Power System Analysis</li>
+                                <li>Electrical Machines</li>
+                                <li>Power Electronics</li>
+                                <li>High Voltage Engineering</li>
+                            </ul>
+                        </div>
+                        <div class="course-category">
+                            <h5>Electronics & Control</h5>
+                            <ul>
+                                <li>Digital Electronics</li>
+                                <li>Control Systems</li>
+                                <li>Microprocessors</li>
+                                <li>Signal Processing</li>
+                            </ul>
+                        </div>
+                        <div class="course-category">
+                            <h5>Fundamentals</h5>
+                            <ul>
+                                <li>Circuit Theory</li>
+                                <li>Electromagnetic Theory</li>
+                                <li>Engineering Mathematics</li>
+                                <li>Numerical Methods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Academic Projects -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-flask"></i>
+                        Academic Projects
+                    </h3>
+                    <div class="project-item">
+                        <h4>Smart Home Energy Monitoring System</h4>
+                        <span class="project-date">Semester 5, 2023</span>
+                        <p class="project-description">
+                            Designed and implemented an IoT-based energy monitoring system using Arduino, 
+                            current sensors, and Wi-Fi module to track household electricity consumption.
+                        </p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>IoT</span>
+                            <span>MATLAB</span>
+                            <span>PCB Design</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Three-Phase Induction Motor Control</h4>
+                        <span class="project-date">Semester 4, 2023</span>
+                        <p class="project-description">
+                            Developed a variable frequency drive system for speed control of three-phase 
+                            induction motors using power electronics components and PLC programming.
+                        </p>
+                        <div class="project-tech">
+                            <span>PLC</span>
+                            <span>VFD</span>
+                            <span>Ladder Logic</span>
+                            <span>Simulink</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Technical Skills -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-tools"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h5>Engineering Software</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MATLAB & Simulink</span>
+                                <span class="skill-tag">AutoCAD</span>
+                                <span class="skill-tag">ETAP</span>
+                                <span class="skill-tag">PSIM</span>
+                                <span class="skill-tag">Multisim</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5>Programming</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PLC Ladder Logic</span>
+                                <span class="skill-tag">VHDL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h5>Laboratory Skills</h5>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Oscilloscope</span>
+                                <span class="skill-tag">Function Generator</span>
+                                <span class="skill-tag">PCB Fabrication</span>
+                                <span class="skill-tag">Soldering</span>
+                                <span class="skill-tag">Circuit Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications & Training -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-certificate"></i>
+                        Certifications & Training
+                    </h3>
+                    <div class="certification-item">
+                        <h5>Electrical Safety Competency Certificate</h5>
+                        <span class="cert-org">DOSH Malaysia</span>
+                        <span class="cert-date">2023</span>
+                    </div>
+                    <div class="certification-item">
+                        <h5>MATLAB for Engineering Applications</h5>
+                        <span class="cert-org">MathWorks</span>
+                        <span class="cert-date">2023</span>
+                    </div>
+                    <div class="certification-item">
+                        <h5>Basic PLC Programming Workshop</h5>
+                        <span class="cert-org">Siemens Malaysia</span>
+                        <span class="cert-date">2022</span>
+                    </div>
+                </section>
+
+                <!-- Extracurricular Activities -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-users"></i>
+                        Extracurricular Activities
+                    </h3>
+                    <div class="activity-item">
+                        <h4>IEEE UM Student Branch</h4>
+                        <span class="activity-role">Technical Committee Member</span>
+                        <span class="activity-date">2022 - Present</span>
+                        <p>Organized technical workshops and industry visits for electrical engineering students</p>
+                    </div>
+                    <div class="activity-item">
+                        <h4>UM Robotics Club</h4>
+                        <span class="activity-role">Project Team Member</span>
+                        <span class="activity-date">2022 - 2023</span>
+                        <p>Participated in line-follower robot competition and automation projects</p>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-language"></i>
+                        Languages
+                    </h3>
+                    <div class="language-item">
+                        <span class="language-name">Malay</span>
+                        <span class="language-level">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">English</span>
+                        <span class="language-level">Professional</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name">Mandarin</span>
+                        <span class="language-level">Basic</span>
+                    </div>
+                </section>
+
+                <!-- References -->
+                <section class="section">
+                    <h3 class="section-title">
+                        <i class="fas fa-user-check"></i>
+                        References
+                    </h3>
+                    <div class="reference-item">
+                        <p><strong>Dr. Siti Noraini binti Ahmad</strong><br>
+                        Senior Lecturer, Electrical Engineering Department<br>
+                        Universiti Malaya<br>
+                        sitinoraini@um.edu.my</p>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
-
-    <script>
-        // Create falling hearts
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.innerHTML = '💖';
-            heart.classList.add('heart');
-            
-            const startPosition = Math.random() * window.innerWidth;
-            const duration = Math.random() * 3 + 2;
-            const size = Math.random() * 20 + 15;
-            
-            heart.style.left = `${startPosition}px`;
-            heart.style.fontSize = `${size}px`;
-            heart.style.animationDuration = `${duration}s`;
-            
-            document.getElementById('hearts').appendChild(heart);
-            
-            // Remove heart after animation completes
-            setTimeout(() => {
-                heart.remove();
-            }, duration * 1000);
-        }
-
-        // Create sparkles
-        function createSparkle() {
-            const sparkle = document.createElement('div');
-            sparkle.classList.add('sparkle');
-            
-            const x = Math.random() * window.innerWidth;
-            const y = Math.random() * window.innerHeight;
-            const delay = Math.random() * 2;
-            
-            sparkle.style.left = `${x}px`;
-            sparkle.style.top = `${y}px`;
-            sparkle.style.animationDelay = `${delay}s`;
-            
-            document.body.appendChild(sparkle);
-            
-            // Remove sparkle after animation
-            setTimeout(() => {
-                sparkle.remove();
-            }, 2000);
-        }
-
-        // Generate hearts continuously
-        setInterval(createHeart, 300);
-        
-        // Generate sparkles continuously
-        setInterval(createSparkle, 100);
-
-        // Initial batch of hearts
-        for (let i = 0; i < 10; i++) {
-            setTimeout(createHeart, i * 200);
-        }
-
-        // Add click effect
-        document.addEventListener('click', function(e) {
-            const clickHeart = document.createElement('div');
-            clickHeart.innerHTML = '💕';
-            clickHeart.style.position = 'fixed';
-            clickHeart.style.left = `${e.clientX - 20}px`;
-            clickHeart.style.top = `${e.clientY - 20}px`;
-            clickHeart.style.fontSize = '40px';
-            clickHeart.style.pointerEvents = 'none';
-            clickHeart.style.zIndex = '1000';
-            clickHeart.style.animation = 'heartbeat 0.6s ease-in-out';
-            
-            document.body.appendChild(clickHeart);
-            
-            setTimeout(() => {
-                clickHeart.remove();
-            }, 600);
-        });
-    </script>
 </body>
 </html>
