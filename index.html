@@ -3,260 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad bin Abdullah - Electrical Engineering Student</title>
+    <title>Adam Daniel bin Putra - Electrical Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="resume-container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-section">
-                <div class="profile-info">
-                    <h1 class="name">Ahmad bin Abdullah</h1>
-                    <h2 class="title">Electrical Engineering Student</h2>
-                    <p class="university"><i class="fas fa-university"></i> Universiti Malaya</p>
-                    <p class="tagline">Seeking internship opportunity to apply electrical engineering principles and gain practical industry experience</p>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Adam Daniel</h2>
+                <span>Electrical Engineering Student</span>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>ahmad.abdullah@email.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+60 12-345 6789</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Kuala Lumpur, Malaysia</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>linkedin.com/in/ahmadabdullah</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-id-card"></i>
-                    <span>Available: December 2024 - March 2025</span>
-                </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Left Column -->
-            <div class="left-column">
-                <!-- Education Section -->
-                <section class="section">
-                    <h3 class="section-title">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Adam Daniel bin Putra</h1>
+                <h2 class="hero-subtitle">Electrical Engineering Student</h2>
+                <p class="hero-description">
+                    Year 3 Electrical Engineering student at Universiti Malaya seeking internship opportunities 
+                    to apply theoretical knowledge in practical industry settings. Passionate about power systems, 
+                    renewable energy, and innovative engineering solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3.75</span>
+                        <span class="stat-label">Current CGPA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2025</span>
+                        <span class="stat-label">Graduation Year</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" 
+                     alt="Engineering Student">
+                <div class="image-badge">
+                    <i class="fas fa-university"></i>
+                    <span>Universiti Malaya</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Electrical Engineering Enthusiast</h3>
+                    <p>
+                        I am a dedicated Year 3 Electrical Engineering student at Universiti Malaya with a strong 
+                        academic record and passion for innovative engineering solutions. My interests lie in power 
+                        systems, renewable energy, and smart grid technologies.
+                    </p>
+                    <p>
+                        Through my coursework and projects, I've developed expertise in circuit design, power electronics, 
+                        and control systems. I'm eager to apply these skills in a professional internship setting and 
+                        contribute to meaningful engineering projects.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Power Systems</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-solar-panel"></i>
+                            <span>Renewable Energy</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-microchip"></i>
+                            <span>Electronics</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-robot"></i>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
                         <i class="fas fa-graduation-cap"></i>
-                        Education
-                    </h3>
-                    <div class="education-item">
-                        <div class="education-header">
-                            <h4>Bachelor of Electrical Engineering</h4>
-                            <span class="date">2021 - Present</span>
-                        </div>
-                        <div class="institution">Universiti Malaya</div>
-                        <div class="gpa">Current CGPA: 3.75/4.00</div>
-                        <div class="expected-grad">Expected Graduation: June 2025</div>
+                        <h4>Education</h4>
+                        <p>B.Eng. Electrical Engineering</p>
+                        <span>Universiti Malaya</span>
                     </div>
-                </section>
+                    <div class="info-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Availability</h4>
+                        <p>Internship Period</p>
+                        <span>Dec 2024 - Mar 2025</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Based in</p>
+                        <span>Kuala Lumpur, Malaysia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Relevant Coursework -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-book"></i>
-                        Relevant Coursework
-                    </h3>
-                    <div class="coursework-grid">
-                        <div class="course-category">
-                            <h5>Power Systems</h5>
-                            <ul>
-                                <li>Power System Analysis</li>
-                                <li>Electrical Machines</li>
-                                <li>Power Electronics</li>
-                                <li>High Voltage Engineering</li>
-                            </ul>
-                        </div>
-                        <div class="course-category">
-                            <h5>Electronics & Control</h5>
-                            <ul>
-                                <li>Digital Electronics</li>
-                                <li>Control Systems</li>
-                                <li>Microprocessors</li>
-                                <li>Signal Processing</li>
-                            </ul>
-                        </div>
-                        <div class="course-category">
-                            <h5>Fundamentals</h5>
-                            <ul>
-                                <li>Circuit Theory</li>
-                                <li>Electromagnetic Theory</li>
-                                <li>Engineering Mathematics</li>
-                                <li>Numerical Methods</li>
-                            </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Academic Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" 
+                             alt="Smart Home Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
                         </div>
                     </div>
-                </section>
-
-                <!-- Academic Projects -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-flask"></i>
-                        Academic Projects
-                    </h3>
-                    <div class="project-item">
-                        <h4>Smart Home Energy Monitoring System</h4>
-                        <span class="project-date">Semester 5, 2023</span>
-                        <p class="project-description">
-                            Designed and implemented an IoT-based energy monitoring system using Arduino, 
-                            current sensors, and Wi-Fi module to track household electricity consumption.
-                        </p>
+                    <div class="project-content">
+                        <h3>Smart Home Energy Monitoring</h3>
+                        <p>IoT-based system for real-time electricity consumption tracking using Arduino and sensors.</p>
                         <div class="project-tech">
                             <span>Arduino</span>
                             <span>IoT</span>
                             <span>MATLAB</span>
-                            <span>PCB Design</span>
+                        </div>
+                        <div class="project-date">Semester 5, 2023</div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" 
+                             alt="Motor Control Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
                         </div>
                     </div>
-                    <div class="project-item">
-                        <h4>Three-Phase Induction Motor Control</h4>
-                        <span class="project-date">Semester 4, 2023</span>
-                        <p class="project-description">
-                            Developed a variable frequency drive system for speed control of three-phase 
-                            induction motors using power electronics components and PLC programming.
-                        </p>
+                    <div class="project-content">
+                        <h3>Motor Control System</h3>
+                        <p>Variable frequency drive for three-phase induction motor speed control using PLC.</p>
                         <div class="project-tech">
                             <span>PLC</span>
                             <span>VFD</span>
-                            <span>Ladder Logic</span>
                             <span>Simulink</span>
                         </div>
+                        <div class="project-date">Semester 4, 2023</div>
                     </div>
-                </section>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250&q=80" 
+                             alt="Solar Power Project">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Solar Power Monitoring</h3>
+                        <p>Real-time solar panel performance analysis system with data visualization dashboard.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-date">Semester 3, 2022</div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Right Column -->
-            <div class="right-column">
-                <!-- Technical Skills -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-tools"></i>
-                        Technical Skills
-                    </h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h5>Engineering Software</h5>
-                            <div class="skill-tags">
-                                <span class="skill-tag">MATLAB & Simulink</span>
-                                <span class="skill-tag">AutoCAD</span>
-                                <span class="skill-tag">ETAP</span>
-                                <span class="skill-tag">PSIM</span>
-                                <span class="skill-tag">Multisim</span>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Engineering Software</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>MATLAB & Simulink</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
-                        <div class="skill-category">
-                            <h5>Programming</h5>
-                            <div class="skill-tags">
-                                <span class="skill-tag">C++</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">PLC Ladder Logic</span>
-                                <span class="skill-tag">VHDL</span>
+                        <div class="skill-item">
+                            <span>AutoCAD</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
-                        <div class="skill-category">
-                            <h5>Laboratory Skills</h5>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Oscilloscope</span>
-                                <span class="skill-tag">Function Generator</span>
-                                <span class="skill-tag">PCB Fabrication</span>
-                                <span class="skill-tag">Soldering</span>
-                                <span class="skill-tag">Circuit Testing</span>
+                        <div class="skill-item">
+                            <span>ETAP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <!-- Certifications & Training -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-certificate"></i>
-                        Certifications & Training
-                    </h3>
-                    <div class="certification-item">
-                        <h5>Electrical Safety Competency Certificate</h5>
-                        <span class="cert-org">DOSH Malaysia</span>
-                        <span class="cert-date">2023</span>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PLC Programming</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="certification-item">
-                        <h5>MATLAB for Engineering Applications</h5>
-                        <span class="cert-org">MathWorks</span>
-                        <span class="cert-date">2023</span>
-                    </div>
-                    <div class="certification-item">
-                        <h5>Basic PLC Programming Workshop</h5>
-                        <span class="cert-org">Siemens Malaysia</span>
-                        <span class="cert-date">2022</span>
-                    </div>
-                </section>
+                </div>
 
-                <!-- Extracurricular Activities -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-users"></i>
-                        Extracurricular Activities
-                    </h3>
-                    <div class="activity-item">
-                        <h4>IEEE UM Student Branch</h4>
-                        <span class="activity-role">Technical Committee Member</span>
-                        <span class="activity-date">2022 - Present</span>
-                        <p>Organized technical workshops and industry visits for electrical engineering students</p>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Laboratory Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Oscilloscope</span>
+                        <span class="skill-tag">PCB Design</span>
+                        <span class="skill-tag">Circuit Testing</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Power Analysis</span>
+                        <span class="skill-tag">Signal Processing</span>
                     </div>
-                    <div class="activity-item">
-                        <h4>UM Robotics Club</h4>
-                        <span class="activity-role">Project Team Member</span>
-                        <span class="activity-date">2022 - 2023</span>
-                        <p>Participated in line-follower robot competition and automation projects</p>
-                    </div>
-                </section>
-
-                <!-- Languages -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-language"></i>
-                        Languages
-                    </h3>
-                    <div class="language-item">
-                        <span class="language-name">Malay</span>
-                        <span class="language-level">Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">English</span>
-                        <span class="language-level">Professional</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">Mandarin</span>
-                        <span class="language-level">Basic</span>
-                    </div>
-                </section>
-
-                <!-- References -->
-                <section class="section">
-                    <h3 class="section-title">
-                        <i class="fas fa-user-check"></i>
-                        References
-                    </h3>
-                    <div class="reference-item">
-                        <p><strong>Dr. Siti Noraini binti Ahmad</strong><br>
-                        Senior Lecturer, Electrical Engineering Department<br>
-                        Universiti Malaya<br>
-                        sitinoraini@um.edu.my</p>
-                    </div>
-                </section>
+                </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Achievements</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Electrical Engineering</h3>
+                        <span class="institution">Universiti Malaya</span>
+                        <p class="gpa">Current CGPA: 3.75/4.00</p>
+                        <ul>
+                            <li>Dean's List Award - 3 consecutive semesters</li>
+                            <li>IEEE Student Branch - Technical Committee Member</li>
+                            <li>Participated in multiple engineering competitions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Certifications</h3>
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Electrical Safety Competency - DOSH Malaysia</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>MATLAB for Engineering Applications - MathWorks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm currently seeking internship opportunities for December 2024 - March 2025. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>ahmad.abdullah@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p>+60 12-345 6789</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Kuala Lumpur, Malaysia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ahmad bin Abdullah. All rights reserved.</p>
+            <p>Electrical Engineering Student - Universiti Malaya</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
