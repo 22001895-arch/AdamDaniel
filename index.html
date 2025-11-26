@@ -3,52 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name lol</title>
-    <link rel="stylesheet" href="style.css">
+    <title>For My Love</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .love-container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .love-text {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #ff4d6d;
+            text-shadow: 3px 3px 0px #ff8fa3,
+                         6px 6px 0px rgba(255, 77, 109, 0.3);
+            animation: heartbeat 1.5s ease-in-out infinite;
+            margin-bottom: 2rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #ff4d6d;
+            opacity: 0.9;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: #ff4d6d;
+            opacity: 0.7;
+            animation: fall linear forwards;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Sparkle effect */
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            border-radius: 50%;
+            animation: sparkle 2s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .love-text {
+                font-size: 3rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .love-text {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="hearts" id="hearts"></div>
+    <div class="love-container">
+        <div class="love-text">I Love You Baby</div>
+        <div class="subtitle">Forever and Always 💖</div>
+    </div>
 
-    <header>
-        <h1>Adam Daniel</h1>
-        <p>Your title — e.g., Electrical Engineering Student | AI Enthusiast</p>
-    </header>
+    <script>
+        // Create falling hearts
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💖';
+            heart.classList.add('heart');
+            
+            const startPosition = Math.random() * window.innerWidth;
+            const duration = Math.random() * 3 + 2;
+            const size = Math.random() * 20 + 15;
+            
+            heart.style.left = `${startPosition}px`;
+            heart.style.fontSize = `${size}px`;
+            heart.style.animationDuration = `${duration}s`;
+            
+            document.getElementById('hearts').appendChild(heart);
+            
+            // Remove heart after animation completes
+            setTimeout(() => {
+                heart.remove();
+            }, duration * 1000);
+        }
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        // Create sparkles
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            const delay = Math.random() * 2;
+            
+            sparkle.style.left = `${x}px`;
+            sparkle.style.top = `${y}px`;
+            sparkle.style.animationDelay = `${delay}s`;
+            
+            document.body.appendChild(sparkle);
+            
+            // Remove sparkle after animation
+            setTimeout(() => {
+                sparkle.remove();
+            }, 2000);
+        }
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>
-            Write a short introduction about yourself here.  
-            Example: “I am a Year 3 Electrical Engineering student at UM with interests in AI, IoT, and innovation.”
-        </p>
-    </section>
+        // Generate hearts continuously
+        setInterval(createHeart, 300);
+        
+        // Generate sparkles continuously
+        setInterval(createSparkle, 100);
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Project Title</h3>
-            <p>Short description of your project goes here.</p>
-        </div>
+        // Initial batch of hearts
+        for (let i = 0; i < 10; i++) {
+            setTimeout(createHeart, i * 200);
+        }
 
-        <div class="card">
-            <h3>Another Project</h3>
-            <p>Description of your second project.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
-
+        // Add click effect
+        document.addEventListener('click', function(e) {
+            const clickHeart = document.createElement('div');
+            clickHeart.innerHTML = '💕';
+            clickHeart.style.position = 'fixed';
+            clickHeart.style.left = `${e.clientX - 20}px`;
+            clickHeart.style.top = `${e.clientY - 20}px`;
+            clickHeart.style.fontSize = '40px';
+            clickHeart.style.pointerEvents = 'none';
+            clickHeart.style.zIndex = '1000';
+            clickHeart.style.animation = 'heartbeat 0.6s ease-in-out';
+            
+            document.body.appendChild(clickHeart);
+            
+            setTimeout(() => {
+                clickHeart.remove();
+            }, 600);
+        });
+    </script>
 </body>
 </html>
